@@ -1,0 +1,7 @@
+.button {
+	@apply rounded-md py-[10px] px-[15px] transition-colors;
+
+	&:hover {
+		@apply bg-[--aqua-color] text-[--white-color];
+	}
+}

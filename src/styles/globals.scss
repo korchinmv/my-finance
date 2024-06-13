@@ -3,13 +3,14 @@
 @tailwind utilities;
 
 :root {
-	--bg-color: #fff;
+	--white-color: #fff;
 	--text-color: #363434;
 	--accent-color: #8d53d9;
+	--aqua-color: #3ed4e2;
 }
 
 body {
-	@apply text-[18px] text-[--text-color] font-normal bg-[--bg-color];
+	@apply text-[18px] text-[--text-color] font-normal  flex flex-col h-screen bg-repeat bg-cover;
 }
 
 @layer utilities {

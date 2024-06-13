@@ -1,0 +1,11 @@
+.input {
+	@apply block w-full border-[3px] border-transparent rounded-md py-[10px] px-[20px] text-[--text-color] outline-none transition-colors ease-in-out;
+
+	&:focus {
+		@apply border-[--aqua-color];
+	}
+
+	&:placeholder {
+		@apply text-[--text-color];
+	}
+}

@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
-import "./globals.scss";
+import "@/styles/globals.scss";
 import Main from "@/components/Main/Main";
 import Footer from "@/components/Footer/Footer";
+import backgroundImage from "../../public/bg-icons.svg";
 
 const font = Nunito({ subsets: ["latin"], weight: ["400", "500", "700"] });
 
@@ -92,7 +93,10 @@ export default function RootLayout({
         <meta name='msapplication-TileImage' content='/ms-icon-144x144.png' />
         <meta name='theme-color' content='#ffffff' />
       </head>
-      <body className={`${font.className} flex flex-col h-screen`}>
+      <body
+        className={`${font.className}`}
+        style={{ backgroundImage: `url(${backgroundImage.src})` }}
+      >
         <Main>{children}</Main>
         <Footer footerText='Frontend-разработчик Корчин М.В. 2024 год' />
       </body>

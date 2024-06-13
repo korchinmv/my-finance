@@ -1,4 +1,3 @@
-import Container from "@/components/Container/Container";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
