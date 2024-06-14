@@ -1,3 +1,4 @@
+import { useFormContext } from "react-hook-form";
 import styles from "./Button.module.scss";
 
 interface IButtonProps {
@@ -6,7 +7,13 @@ interface IButtonProps {
 }
 
 const Button = ({ text, css }: IButtonProps) => {
-  return <button className={`${styles.button} ${css}`}>{text}</button>;
+  const { formState } = useFormContext();
+
+  return (
+    <button className={`${styles.button} ${css}`} disabled={!formState.isValid}>
+      {text}
+    </button>
+  );
 };
 
 export default Button;

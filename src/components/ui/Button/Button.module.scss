@@ -4,4 +4,8 @@
 	&:hover {
 		@apply bg-[--aqua-color] text-[--white-color];
 	}
+
+	&:disabled {
+		@apply bg-slate-300	 text-[--white-color];
+	}
 }

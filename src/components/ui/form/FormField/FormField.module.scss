@@ -1,11 +1,15 @@
+.wrapper {
+	@apply relative;
+}
+
 .input {
 	@apply block w-full border-[3px] border-transparent rounded-md py-[10px] px-[20px] text-[--text-color] outline-none transition-colors ease-in-out;
 
 	&:focus {
 		@apply border-[--aqua-color];
 	}
+}
 
-	&:placeholder {
-		@apply text-[--text-color];
-	}
+.span {
+	@apply text-[14px] text-left text-red-700 absolute left-0 bottom-[-23px];
 }

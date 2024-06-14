@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Мои Финансы | Логин",
+  title: "Мои Финансы | Вход",
 };
 
 const LoginPage = () => {
